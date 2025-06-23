@@ -13,6 +13,11 @@ ros2 run drone_control takeoff_node
 Terminal 5:(Debug)
 ros2 topic echo /mavros/state
 
+Terminal 6:
+Arm the drone by:
+ros2 service call /mavros/cmd/arming mavros_msgs/srv/CommandBool "{ value: true }"
+
+
 Should get this
 header:
   stamp:

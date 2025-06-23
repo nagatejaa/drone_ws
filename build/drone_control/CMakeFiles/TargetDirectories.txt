@@ -1,0 +1,10 @@
+/home/nagateja/ws_drone/src/drone_control/build/drone_control/CMakeFiles/uninstall.dir
+/home/nagateja/ws_drone/src/drone_control/build/drone_control/CMakeFiles/drone_control_uninstall.dir
+/home/nagateja/ws_drone/src/drone_control/build/drone_control/CMakeFiles/takeoff_node.dir
+/home/nagateja/ws_drone/src/drone_control/build/drone_control/CMakeFiles/test.dir
+/home/nagateja/ws_drone/src/drone_control/build/drone_control/CMakeFiles/edit_cache.dir
+/home/nagateja/ws_drone/src/drone_control/build/drone_control/CMakeFiles/rebuild_cache.dir
+/home/nagateja/ws_drone/src/drone_control/build/drone_control/CMakeFiles/list_install_components.dir
+/home/nagateja/ws_drone/src/drone_control/build/drone_control/CMakeFiles/install.dir
+/home/nagateja/ws_drone/src/drone_control/build/drone_control/CMakeFiles/install/local.dir
+/home/nagateja/ws_drone/src/drone_control/build/drone_control/CMakeFiles/install/strip.dir

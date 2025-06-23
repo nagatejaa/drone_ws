@@ -1,0 +1,12 @@
+In file included from [01m[K/home/nagateja/ws_drone/src/drone_control/src/takeoff_node.cpp:78[m[K:
+[01m[K/home/nagateja/ws_drone/src/drone_control/include/drone_control/gnc_functions.hpp:[m[K In function ‘[01m[Kbool drone_control::arm_drone(rclcpp::Node::SharedPtr)[m[K’:
+[01m[K/home/nagateja/ws_drone/src/drone_control/include/drone_control/gnc_functions.hpp:14:35:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""s[m[K’
+   14 |     if (!client->wait_for_service([01;31m[K5s[m[K)) {
+      |                                   [01;31m[K^~[m[K
+[01m[K/home/nagateja/ws_drone/src/drone_control/include/drone_control/gnc_functions.hpp:[m[K In function ‘[01m[Kbool drone_control::takeoff(rclcpp::Node::SharedPtr, double)[m[K’:
+[01m[K/home/nagateja/ws_drone/src/drone_control/include/drone_control/gnc_functions.hpp:35:35:[m[K [01;31m[Kerror: [m[Kunable to find numeric literal operator ‘[01m[Koperator""s[m[K’
+   35 |     if (!client->wait_for_service([01;31m[K5s[m[K)) {
+      |                                   [01;31m[K^~[m[K
+gmake[2]: *** [CMakeFiles/takeoff_node.dir/build.make:76: CMakeFiles/takeoff_node.dir/src/takeoff_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/takeoff_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

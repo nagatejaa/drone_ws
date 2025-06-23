@@ -10,8 +10,13 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(mavros_msgs REQUIRED)
 
+
+include_directories(include)
+
 add_executable(takeoff_node src/takeoff_node.cpp)
 ament_target_dependencies(takeoff_node rclcpp mavros_msgs)
+install(TARGETS takeoff_node DESTINATION lib/${PROJECT_NAME})
+
 
 install(TARGETS
   takeoff_node
