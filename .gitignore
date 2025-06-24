@@ -1,0 +1,21 @@
+# ROS 2 build artifacts (excluded if workspace is built from package)
+build/
+install/
+log/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Python cache (if any)
+__pycache__/
+
+# Editor folders
+.vscode/
+.idea/
+
+# Backup files
+*~
+*.swp
