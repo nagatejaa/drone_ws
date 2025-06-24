@@ -17,9 +17,18 @@ add_executable(takeoff_node src/takeoff_node.cpp)
 ament_target_dependencies(takeoff_node rclcpp mavros_msgs)
 install(TARGETS takeoff_node DESTINATION lib/${PROJECT_NAME})
 
+add_executable(square src/square.cpp)
+ament_target_dependencies(square rclcpp mavros_msgs)
+install(TARGETS square DESTINATION lib/${PROJECT_NAME})
+
+add_executable(takeoff_function src/takeoff_function.cpp)
+ament_target_dependencies(takeoff_function rclcpp mavros_msgs)
+install(TARGETS takeoff_function DESTINATION lib/${PROJECT_NAME})
 
 install(TARGETS
   takeoff_node
+  square
+  takeoff_function
   DESTINATION lib/${PROJECT_NAME}
 )
 
