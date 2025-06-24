@@ -30,5 +30,8 @@ mode: GUIDED
 system_status: 4
 ___________________________________________________________________________________________________________________________________________________
 
-to 
-ch
+to make the drone follow square path by the code 
+change the terminal 4 command to 
+ ros2 run drone_control square 
+
+everything is same
