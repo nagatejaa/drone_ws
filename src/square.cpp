@@ -29,7 +29,7 @@ int main(int argc, char **argv)
     rclcpp::sleep_for(1s);
 
     RCLCPP_INFO(node->get_logger(), "Moving left by 500m...");
-    drone_control::move_left_by(node, 500.0, 20.0); //500m/s 
+    drone_control::move_left_by(node, 500.0, 20.0); //500m  with speed 20m/s 
     rclcpp::sleep_for(1s);
 
     RCLCPP_INFO(node->get_logger(), "Moving down by 2m...");
