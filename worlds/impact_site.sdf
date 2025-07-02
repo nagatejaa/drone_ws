@@ -1,0 +1,302 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="impact_site">
+    <physics name="1ms" type="ignore">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"/>
+    <plugin filename="gz-sim-navsat-system" name="gz::sim::systems::NavSat"/>
+
+    <scene>
+      <ambient>1.0 1.0 1.0</ambient>
+      <background>0.8 0.8 0.8</background>
+    </scene>
+
+    <spherical_coordinates>
+      <latitude_deg>-35.363262</latitude_deg>
+      <longitude_deg>149.165237</longitude_deg>
+      <elevation>584</elevation>
+      <heading_deg>0</heading_deg>
+      <surface_model>EARTH_WGS84</surface_model>
+    </spherical_coordinates>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.8 0.8 0.8 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <include>
+      <uri>model://ground_plane</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+
+
+    <include>
+        <uri>model://grasspatch/1</uri>
+        <name>grasspatch</name>
+        <pose>-25 -25 0.001 0 0 0</pose>
+    </include>
+    <include>
+        <uri>model://grasspatch/1</uri>
+        <name>grasspatch2</name>
+        <pose>-25 25 0.001 0 0 0</pose>
+    </include>
+        <include>
+        <uri>model://grasspatch/1</uri>
+        <name>grasspatch3</name>
+        <pose>25 -25 0.001 0 0 0</pose>
+    </include>
+        <include>
+        <uri>model://grasspatch/1</uri>
+        <name>grasspatch4</name>
+        <pose>25 25 0.001 0 0 0</pose>
+    </include>
+
+   
+<include>
+  <uri>model://room_wall_2x5m/1</uri>
+  <name>wall_1</name>
+  <pose>-45 20 1.001 0 0 1.5708</pose>
+</include>
+<include>
+  <uri>model://room_wall_2x5m/1</uri>
+  <name>wall_2</name>
+  <pose>-40 20 1.001 0 0 1.5708</pose>
+</include>
+<include>
+  <uri>model://room_wall_2x5m/1</uri>
+  <name>wall_3</name>
+  <pose>-35 20 1.001 0 0 1.5708</pose>
+</include>
+<include>
+  <uri>model://room_wall_2x5m/1</uri>
+  <name>wall_4</name>
+  <pose>-30 20 1.001 0 0 1.5708</pose>
+</include>
+<include>
+  <uri>model://room_wall_2x5m/1</uri>
+  <name>wall_5</name>
+  <pose>-25 20 1.001 0 0 1.5708</pose>
+</include>
+<include>
+  <uri>model://room_wall_2x5m/1</uri>
+  <name>wall_6</name>
+  <pose>-20 20 1.001 0 0 1.5708</pose>
+</include>
+<include>
+  <uri>model://room_wall_2x5m/1</uri>
+  <name>wall_7</name>
+  <pose>-15 20 1.001 0 0 1.5708</pose>
+</include>
+<include>
+  <uri>model://room_wall_2x5m/1</uri>
+  <name>wall_8</name>
+  <pose>-10 20 1.001 0 0 1.5708</pose>
+</include>
+<include>
+  <uri>model://room_wall_2x5m/1</uri>
+  <name>wall_9</name>
+  <pose>-5 20 1.001 0 0 1.5708</pose>
+</include>
+<include>
+  <uri>model://room_wall_2x5m/1</uri>
+  <name>wall_10</name>
+  <pose>0 20 1.001 0 0 1.5708</pose>
+</include>
+<include>
+  <uri>model://room_wall_2x5m/1</uri>
+  <name>wall_11</name>
+  <pose>5 20 1.001 0 0 1.5708</pose>
+</include>
+<include>
+  <uri>model://room_wall_2x5m/1</uri>
+  <name>wall_12</name>
+  <pose>10 20 1.001 0 0 1.5708</pose>
+</include>
+<include>
+  <uri>model://room_wall_2x5m/1</uri>
+  <name>wall_13</name>
+  <pose>15 20 1.001 0 0 1.5708</pose>
+</include>
+<include>
+  <uri>model://room_wall_2x5m/1</uri>
+  <name>wall_14</name>
+  <pose>20 20 1.001 0 0 1.5708</pose>
+</include>
+<include>
+  <uri>model://room_wall_2x5m/1</uri>
+  <name>wall_15</name>
+  <pose>25 20 1.001 0 0 1.5708</pose>
+</include>
+<include>
+  <uri>model://room_wall_2x5m/1</uri>
+  <name>wall_16</name>
+  <pose>30 20 1.001 0 0 1.5708</pose>
+</include>
+<include>
+  <uri>model://room_wall_2x5m/1</uri>
+  <name>wall_17</name>
+  <pose>35 20 1.001 0 0 1.5708</pose>
+</include>
+<include>
+  <uri>model://room_wall_2x5m/1</uri>
+  <name>wall_18</name>
+  <pose>40 20 1.001 0 0 1.5708</pose>
+</include>
+<include>
+  <uri>model://room_wall_2x5m/1</uri>
+  <name>wall_19</name>
+  <pose>45 20 1.001 0 0 1.5708</pose>
+</include>
+
+<include>
+  <uri>model://school/3</uri>
+  <name>school</name>
+  <pose>2 -38 0.001 0 0 3.14</pose>
+</include>
+
+<include>
+  <uri>model://collapsed industrial building/3</uri>
+  <name>collapsed industrial building</name>
+  <pose>32 -38 0.001 0 0 0</pose>
+</include>
+
+<include>
+  <uri>model://apartment/2</uri>
+  <name>apartment</name>
+  <pose>-35 -38 0.001 0 0 1.5708</pose>
+</include>
+
+
+<include>
+  <uri>model://law office/3</uri>
+  <name>law office</name>
+  <pose>10 -20 0.001 0 0 3.14</pose>
+</include>
+
+<include>
+  <uri>model://office building/3</uri>
+  <name>office building</name>
+  <pose>32 -12 0.001 0 0 1.5708</pose>
+</include>
+
+<include>
+  <uri>model://fire/2</uri>
+  <name>fire</name>
+  <pose>-35 -12 0.001 0 0 1.5708</pose>
+</include>
+
+<include>
+  <uri>model://home/4</uri>
+  <name>home</name>
+  <pose>-10 -16 0.001 0 0 3.14</pose>
+</include>
+
+<include>
+  <uri>model://osrf first office/3</uri>
+  <name>osrf first office</name>
+  <pose>35 8 0.001 0 0 3.14</pose>
+</include>
+
+
+<include>
+  <uri>model://collapsed industrial building/3</uri>
+  <name>collapsed industrial building2</name>
+  <pose>-38 10 0.001 0 0 0</pose>
+</include>
+
+<include>
+  <uri>model://fire/2</uri>
+  <name>fire2</name>
+  <pose>-10 10 0.001 0 0 0</pose>
+</include>
+
+<include>
+  <uri>model://ambulance2/2</uri>
+  <name>ambulance2</name>
+  <pose>0 -5 0.001 0 0 1.5708</pose>
+</include>
+
+<include>
+  <uri>model://home/4</uri>
+  <name>home2</name>
+  <pose>13 10 0.001 0 0 3.14</pose>
+</include>
+
+
+    <include>
+        <uri>model://drone1</uri>
+        <name>drone1</name>
+        <pose>20 30 0.195 0 0 1.5708</pose>
+    </include>
+
+    <include>
+        <uri>model://drone2</uri>
+        <name>drone2</name>
+        <pose>20 27 0.195 0 0 1.5708</pose>
+    </include>
+
+    <include>
+      <uri>model://drone3</uri>
+      <name>drone3</name>
+      <pose>20 24 0.195 0 0 1.5708</pose>
+    </include>
+
+    <include>
+      <uri>model://drone4</uri>
+      <name>drone4</name>
+      <pose>23 30 0.195 0 0 1.5708</pose>
+    </include>
+
+    <include>
+      <uri>model://drone5</uri>
+      <name>drone5</name>
+      <pose>23 27 0.195 0 0 1.5708</pose>
+    </include>
+
+    <include>
+      <uri>model://drone6</uri>
+      <name>drone6</name>
+      <pose>23 24 0.195 0 0 1.5708</pose>
+    </include>
+
+    <include>
+      <uri>model://drone7</uri>
+      <name>drone7</name>
+      <pose>26 30 0.195 0 0 1.5708</pose>
+    </include>
+
+    <include>
+      <uri>model://drone8</uri>
+      <name>drone8</name>
+      <pose>26 27 0.195 0 0 1.5708</pose>
+    </include>
+
+    <include>
+      <uri>model://drone9</uri>
+      <name>drone9</name>
+      <pose>26 24 0.195 0 0 1.5708</pose>
+    </include>
+
+
+
+  </world>
+</sdf>
