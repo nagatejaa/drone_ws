@@ -9,6 +9,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(mavros_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
 
 
 include_directories(include)
@@ -25,10 +26,15 @@ add_executable(takeoff_function src/takeoff_function.cpp)
 ament_target_dependencies(takeoff_function rclcpp mavros_msgs)
 install(TARGETS takeoff_function DESTINATION lib/${PROJECT_NAME})
 
+add_executable(test_node src/test.cpp)
+ament_target_dependencies(test_node rclcpp mavros_msgs nav_msgs)
+install(TARGETS test_node DESTINATION lib/${PROJECT_NAME})
+
 install(TARGETS
   takeoff_node
   square
   takeoff_function
+  test_node
   DESTINATION lib/${PROJECT_NAME}
 )
 
