@@ -19,3 +19,8 @@ __pycache__/
 # Backup files
 *~
 *.swp
+
+
+#deleted files
+drones/
+launch/launch_drone.py
